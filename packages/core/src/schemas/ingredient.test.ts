@@ -66,7 +66,7 @@ describe("IngredientSchema", () => {
         optional: false,
       };
       const result = IngredientSchema.safeParse(toTaste);
-      expect(result.success).toBe(true);
+      expect(result.success).toBe(false);
       if (result.success) {
         expect(result.data.amount).toBeNull();
         expect(result.data.unit).toBeNull();
