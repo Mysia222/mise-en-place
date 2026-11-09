@@ -5,14 +5,7 @@ Core idea: the LLM understands messy input and makes decisions; deterministic co
 
 ## Commands
 
-pnpm workspace, Node ESM, packages consumed as TS source (no build step).
-
-pnpm install
-pnpm -r typecheck
-pnpm -r test
-pnpm --filter @mise/core exec vitest run path/to/file.test.ts
-pnpm --filter @mise/core exec vitest run -t "test name"
-pnpm exec tsx <file.ts>
+Definition of done: `pnpm typecheck`, `pnpm lint`, `pnpm format:check` and `pnpm test` all pass. Report results.
 
 ## Architecture
 
@@ -104,3 +97,5 @@ apps/cli CLI entry point
 - Never add, remove or upgrade dependencies without asking first. Explain why it's needed
   and why the standard library isn't enough. "Pure" in core means no LLM/network/I/O,
   not "any side-effect-free library is fine".
+
+- Core is language-agnostic: units and ingredient IDs are codes, never English words. Source text stays in `raw`.
