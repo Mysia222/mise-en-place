@@ -6,7 +6,7 @@
   "main": "./src/index.ts",
   "scripts": {
     "test": "vitest run --passWithNoTests",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc -b"
   },
   "dependencies": {
     "@mise/core": "workspace:*"

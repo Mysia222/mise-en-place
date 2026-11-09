@@ -1,0 +1,11 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/core" },
+    { "path": "packages/ingest" },
+    { "path": "packages/agent" },
+    { "path": "packages/mcp-server" },
+    { "path": "packages/evals" },
+    { "path": "apps/cli" }
+  ]
+}
