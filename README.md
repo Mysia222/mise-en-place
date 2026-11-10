@@ -16,14 +16,14 @@ The model never converts units or adds up a shopping list.
 
 ## Planned architecture
 
-| Package | Role |
-| --- | --- |
-| `packages/core` | Pure domain logic: Zod schemas, units, scaling, nutrition. No LLM, no I/O. |
-| `packages/ingest` | Recipe extraction with Claude (structured output) |
-| `packages/evals` | Golden set, eval runner, accuracy and cost reports |
-| `packages/mcp-server` | MCP server exposing recipes, pantry and shopping lists |
-| `packages/agent` | Meal-planning agent |
-| `apps/cli` | Command-line entry point |
+| Package               | Role                                                                       |
+| --------------------- | -------------------------------------------------------------------------- |
+| `packages/core`       | Pure domain logic: Zod schemas, units, scaling, nutrition. No LLM, no I/O. |
+| `packages/ingest`     | Recipe extraction with Claude (structured output)                          |
+| `packages/evals`      | Golden set, eval runner, accuracy and cost reports                         |
+| `packages/mcp-server` | MCP server exposing recipes, pantry and shopping lists                     |
+| `packages/agent`      | Meal-planning agent                                                        |
+| `apps/cli`            | Command-line entry point                                                   |
 
 ## Roadmap
 
